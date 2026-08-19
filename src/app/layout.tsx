@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Newsreader, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 const newsreader = Newsreader({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
       className={`${newsreader.variable} ${plusJakartaSans.variable} scroll-smooth antialiased`}
     >
       <body className="bg-[#0D0F12] text-[#9EADB6] min-h-screen">
+        <Navbar />
         {children}
       </body>
     </html>

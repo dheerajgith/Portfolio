@@ -26,7 +26,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="w-full py-16 md:py-24 border-b border-brand-border/40">
+    <section id="skills" className="w-full py-16 md:py-24 border-b border-brand-border/40 scroll-mt-16">
       <div className="max-w-4xl mx-auto px-6">
         {/* Section Header */}
         <h2 className="font-serif italic text-2xl md:text-3xl text-brand-cream mb-12 tracking-wide">

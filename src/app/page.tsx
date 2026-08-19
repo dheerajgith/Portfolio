@@ -2,6 +2,7 @@ import React from "react";
 import HeroMotif from "./components/HeroMotif";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import { Mail } from "lucide-react";
 
 // Inline minimalist SVG icons to avoid missing brand icons in newer Lucide versions
@@ -42,7 +43,7 @@ const GithubIcon = ({ size = 15, className = "" }: { size?: number; className?: 
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0D0F12] text-[#9EADB6] font-sans selection:bg-[#4A5D4E] selection:text-[#FBF9F6]">
+    <main id="top" className="min-h-screen bg-[#0D0F12] text-[#9EADB6] font-sans selection:bg-[#4A5D4E] selection:text-[#FBF9F6]">
       {/* 1. Header Motif (Interactive SVG Graphic) */}
       <HeroMotif />
 
@@ -56,7 +57,7 @@ export default function Home() {
           {/* Minimal Low-Contrast Hyperlinks */}
           <div className="flex flex-wrap items-center gap-x-8 gap-y-3 mt-10 text-xs md:text-sm font-medium tracking-wider uppercase font-sans">
             <a
-              href="mailto:kothapallidheeraj1@gmail.com"
+              href="#contact"
               className="inline-flex items-center gap-2 text-brand-offwhite/70 hover:text-brand-cream transition-colors duration-300 group"
             >
               <Mail size={15} className="text-brand-sage group-hover:scale-105 transition-transform" />
@@ -87,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* 3. About Me (Single-column layout with wide breathing room) */}
-      <section id="about" className="w-full py-16 md:py-24 border-b border-brand-border/40">
+      <section id="about" className="w-full py-16 md:py-24 border-b border-brand-border/40 scroll-mt-16">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="font-serif italic text-2xl md:text-3xl text-brand-cream mb-8 tracking-wide">
             About Me
@@ -116,7 +117,10 @@ export default function Home() {
       {/* 5. Featured Projects */}
       <Projects />
 
-      {/* 6. Education Milestones & Editorial Footer */}
+      {/* 6. Contact Section */}
+      <Contact />
+
+      {/* 7. Education Milestones & Editorial Footer */}
       <footer className="w-full py-16 bg-brand-bg/60">
         <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-y-6">
           <div>
